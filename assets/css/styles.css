@@ -1,0 +1,396 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.body{
+    font-family: "Inknut Antiqua", serif;
+}
+
+.footer {
+  padding: 20px 0;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-icons a:hover {
+  opacity: 1;
+}
+
+/* Optional custom styles */
+.navbar {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white !important;
+  border-bottom: 1px solid black;
+}
+.navbar-brand {
+  margin-right: 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: #af0000 !important;
+}
+.navbar-nav .nav-link {
+  color: #af0000 !important;
+  font-size: 13px;
+}
+.dropdown-menu {
+  border: 3px solid #af0000;
+  border-radius: 10%;
+  font-weight: bold;
+  color: #af0000;
+}
+.dropdown-item {
+  color: #af0000; /* Set dropdown item font color */
+  font-size: 13px;
+}
+.dropdown-item:hover{
+  color: #af0000;
+}
+.dropdown-divider {
+  border: 1px solid #af0000;
+}
+.carousel-item img {
+  max-height: 300px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-item {
+  height: 500px; /* Adjust the height of carousel items */
+  margin-top: 8%;
+}
+
+.carousel-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.carousel-buttons a {
+  display: inline-block; /* Ensure buttons are inline */
+  margin: 0 5px; /* Adjust horizontal margin */
+  padding: 8px 16px; /* Adjust padding for smaller buttons */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.carousel-buttons img {
+  height: 60px; /* Adjust image height */
+  width: 170px; /* Adjust image width */
+}
+.bg-pj {
+  background-image: url('../img/bg/rename.png');
+  background-size: cover;
+  background-position: center;
+  height: 850px;
+  position: relative; /* Required for pseudo-element */
+}
+
+.bg-pj::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* Adjust height as needed for fade effect */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); /* White fade at bottom */
+}
+
+.youtube {
+  display: flex;
+  flex-direction: column; /* Display videos in a column */
+  align-items: center; /* Center-align items horizontally */
+  padding: 20px 0; /* Add padding as needed */
+}
+
+.youtube-video {
+  margin-top: 5% !important; /* Adjust spacing between videos */
+}
+.youtube-video {
+  transition: transform 0.2s ease; /* Smooth scale transition */
+}
+
+.youtube-video:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1;
+}
+.carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease; /* Smooth fade transition */
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease; /* Smooth transition for visibility and opacity */
+}
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+}
+
+.nav-link {
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+  color: #af0000; /* Color change on hover */
+}
+
+
+.gallery-text {
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.gallery-text h1 {
+  font-size: 145px; /* Adjust font size */
+  color: #af0000; /* Adjust text color */
+  margin-left: 15%;
+}
+
+.gallery-images {
+  margin-bottom: 20px; /* Space below the single image */
+}
+
+.gallery-images img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  width: 25%; /* Set image width */
+  border: 5px solid yellow; /* Yellow border */
+  display: block; /* Ensure image is centered properly */
+  margin: 0 auto; /* Center the image horizontally */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.gallery-double {
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: center; /* Center align horizontally */
+  margin-top: 20px; /* Space above the double images */
+  margin-bottom: 2%;
+}
+
+.gallery-double-image {
+  flex: 1; /* Each image takes equal space */
+  max-width: 20%; /* Adjust width for two images with gap */
+  text-align: center; /* Center align the images */
+  padding: 10px; /* Add some padding around each image */
+}
+
+.gallery-double-image img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: 100%; /* Maintain aspect ratio */
+  display: block; /* Ensure images are displayed as blocks */
+  border: 5px solid yellow; /* Example border styling */
+}
+
+.gallery-triple {
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: center; /* Center align horizontally */
+  margin-top: 20px; /* Space above the double images */
+  margin-bottom: 2%;
+}
+
+.gallery-triple-image {
+  flex: 1; /* Each image takes equal space */
+  max-width: 20%; /* Adjust width for two images with gap */
+  text-align: center; /* Center align the images */
+  padding: 10px; /* Add some padding around each image */
+}
+
+.gallery-triple-image img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: 100%; /* Maintain aspect ratio */
+  display: block; /* Ensure images are displayed as blocks */
+  border: 5px solid yellow; /* Example border styling */
+}
+
+.gallery-images1 {
+  margin-bottom: 20px; /* Space below the single image */
+}
+
+.gallery-images1 img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  width: 60%; /* Set image width */
+  border: 5px solid yellow; /* Yellow border */
+  display: block; /* Ensure image is centered properly */
+  margin: 0 auto; /* Center the image horizontally */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Tablets and larger phones */
+@media (max-width: 990px) {
+  .gallery-text h1 {
+    font-size: 28px; /* Adjust font size */
+  }
+
+  .gallery-double-image, .gallery-triple-image {
+    max-width: 50%; /* Adjust width for two images with gap */
+  }
+}
+
+/* Phones */
+@media (max-width: 990px) {
+  .gallery-text h1 {
+    font-size: 80px; /* Further adjust font size */
+    margin-left: 0; /* Remove or adjust margin as needed */
+    text-align: center; /* Center align heading */
+  }
+
+  .gallery-double, .gallery-triple {
+    flex-wrap: wrap; /* Allow images to stack vertically */
+  }
+
+  .gallery-double-image, .gallery-triple-image {
+    flex: 1 0 100%; /* Full width for each image on smaller screens */
+    max-width: 100%;
+    margin-bottom: 10px; /* Space between stacked images */
+  }
+
+  .gallery-double-image img, .gallery-triple-image img {
+    width: 100%; /* Set full width for each image */
+  }
+  .gallery-images img , .gallery-images1 img {
+    width: 100%;
+  }
+  .gallery-images1 img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Adjust navbar padding and brand size for tablets and iPads */
+@media (max-width: 990px) and (min-width: 769px) {
+  .navbar {
+      padding-left: 8%; /* Adjust padding for tablets */
+      padding-right: 8%; /* Adjust padding for tablets */
+  }
+  .navbar-brand {
+      font-size: 24px; /* Increase font size for tablets */
+  }
+  .bg-pj {
+      height: 600px; /* Adjust height for tablets */
+  }
+  .bg-pj::after {
+      height: 20%; /* Adjust fade height for tablets */
+  }
+  .carousel-item img {
+      max-height: 250px; /* Adjust max-height for tablets */
+  }
+  .carousel-item {
+      height: 400px; /* Adjust height for tablets */
+      margin-top: 25%; /* Adjust margin top for tablets */
+  }
+  .carousel-buttons img {
+      height: 50px; /* Adjust button height for tablets */
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 40px; /* Adjust width for tablets */
+      height: 40px; /* Adjust height for tablets */
+      font-size: 16px; /* Adjust font size for tablets */
+      margin-top: 40%; /* Adjust margin top for tablets */
+  }
+}
+
+/* Make dropdown menu responsive for tablets and iPads */
+@media (max-width: 990px) {
+  .dropdown-menu {
+      border-radius: 0;
+      border-width: 0;
+      box-shadow: none;
+  }
+  .dropdown-divider {
+      display: none; /* Hide dropdown divider on tablets and iPads */
+  }
+  .youtube-video iframe {
+      height: 250px; /* Adjust height for tablets and iPads */
+  }
+}
+
+/* Adjust navbar padding and brand size for mobile */
+@media (max-width: 767px) {
+  .navbar {
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+  .navbar-brand {
+      font-size: 20px;
+  }
+  .bg-pj::after {
+      height: 25%;
+  }
+  .youtube-video iframe {
+      height: 200px;
+      width: 100%; /* Reduced height for mobile */
+  }
+  .bg-pj {
+      height: 500px; /* Reduced height for mobile */
+  }
+  .bg-pj::after {
+      height: 25%; /* Adjust fade height for mobile */
+  }
+  .carousel-item img {
+      max-height: 200px; /* Reduced max-height for mobile */
+  }
+  
+  .carousel-item {
+      height: 300px;
+      margin-top: 20%; /* Reduced height for mobile */
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 30px; /* Reduced width for mobile */
+      height: 30px; /* Reduced height for mobile */
+      font-size: 14px;
+      margin-top: 50%; /* Adjust font size for mobile */
+  }
+  .carousel-buttons img {
+      height: 55px; /* Further reduce height for very small screens */
+  }
+  .carousel-buttons img {
+      height: 40px; /* Reduce height for smaller screens */
+      width: auto; /* Allow width to adjust based on height */
+      max-width: 100%; /* Ensure the image doesn't overflow */
+  }
+}
+
+
+/* Make dropdown menu responsive */
+@media (max-width: 990px) {
+  .dropdown-menu {
+      border-radius: 0;
+      border-width: 0;
+      box-shadow: none;
+  }
+  .dropdown-divider {
+      display: none; /* Hide dropdown divider on mobile */
+  }
+  .youtube-video iframe {
+      height: 200px;
+      width: 100%; /* Reduced height for mobile */
+  }
+}
