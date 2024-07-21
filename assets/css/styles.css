@@ -63,15 +63,16 @@ html, body {
   border: 1px solid #af0000;
 }
 .carousel-item img {
-  max-height: 300px;
-  max-width: 100%;
-  margin: auto;
+  max-height: 500px; /* Remove max-height to allow natural image size */
+  height: auto; /* Ensure images maintain aspect ratio */
+  max-width: 100%; /* Ensure images fit within carousel */
 }
 
 .carousel-item {
-  height: 500px; /* Adjust the height of carousel items */
-  margin-top: 8%;
+  height: auto; /* Adjust the height of carousel items */
+  margin-top: 2.3%;
 }
+
 
 .carousel-buttons {
   margin-top: 20px;
@@ -96,16 +97,6 @@ html, body {
   background-position: center;
   height: 850px;
   position: relative; /* Required for pseudo-element */
-}
-
-.bg-pj::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20%; /* Adjust height as needed for fade effect */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); /* White fade at bottom */
 }
 
 .youtube {
@@ -298,11 +289,15 @@ html, body {
       height: 20%; /* Adjust fade height for tablets */
   }
   .carousel-item img {
-      max-height: 250px; /* Adjust max-height for tablets */
-  }
+    max-height: 300px; /* Remove max-height to allow natural image size */
+    height: auto; /* Ensure images maintain aspect ratio */
+    max-width: 100%; /* Ensure images fit within carousel */
+    margin: auto; /* Center the image horizontally */
+}
+
   .carousel-item {
-      height: 400px; /* Adjust height for tablets */
-      margin-top: 25%; /* Adjust margin top for tablets */
+      height: auto; /* Adjust height for tablets */
+      margin-top: 12%; /* Adjust margin top for tablets */
   }
   .carousel-buttons img {
       height: 50px; /* Adjust button height for tablets */
@@ -354,12 +349,15 @@ html, body {
       height: 25%; /* Adjust fade height for mobile */
   }
   .carousel-item img {
-      max-height: 200px; /* Reduced max-height for mobile */
-  }
-  
+    max-height: 300px; /* Remove max-height to allow natural image size */
+    height: auto; /* Ensure images maintain aspect ratio */
+    max-width: 100%; /* Ensure images fit within carousel */
+    margin: auto; /* Center the image horizontally */
+}
+
   .carousel-item {
-      height: 300px;
-      margin-top: 20%; /* Reduced height for mobile */
+      height: auto; /* Adjust height for tablets */
+      margin-top: 12%; /* Adjust margin top for tablets */
   }
   .carousel-control-prev,
   .carousel-control-next {
