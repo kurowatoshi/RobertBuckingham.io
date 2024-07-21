@@ -29,38 +29,57 @@ html, body {
   opacity: 1;
 }
 
-/* Optional custom styles */
-.navbar {
+ /* Optional custom styles */
+ .navbar {
   padding-left: 10%;
   padding-right: 10%;
   background-color: white !important;
   border-bottom: 1px solid black;
 }
+
 .navbar-brand {
   margin-right: 1rem;
   font-size: 25px;
   font-weight: bold;
   color: #af0000 !important;
+  text-align: left; /* Optional: Align text in the center */
 }
+
+.navbar-brand div {
+  display: block; /* Display each line as a block-level element */
+}
+
 .navbar-nav .nav-link {
   color: #af0000 !important;
-  font-size: 13px;
+  font-size: 17px;
+  font-family: "Cuprum", sans-serif;
+
 }
+
 .dropdown-menu {
   border: 3px solid #af0000;
   border-radius: 10%;
   font-weight: bold;
   color: #af0000;
 }
+
 .dropdown-item {
   color: #af0000; /* Set dropdown item font color */
-  font-size: 13px;
+  font-size: 17px;
+  font-family: "Cuprum", sans-serif;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
   color: #af0000;
 }
+
 .dropdown-divider {
   border: 1px solid #af0000;
+}
+
+.homepage-link {
+  margin-right: 20px; /* Adjust the value as needed */
+  margin-left: 20px;
 }
 .carousel-item img {
   max-height: 500px; /* Remove max-height to allow natural image size */
@@ -88,8 +107,31 @@ html, body {
 }
 
 .carousel-buttons img {
-  height: 60px; /* Adjust image height */
-  width: 170px; /* Adjust image width */
+  height: 80px; /* Adjust image height */
+  width: 220px; /* Adjust image width */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1;
+}
+.carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease; /* Smooth fade transition */
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease; /* Smooth transition for visibility and opacity */
 }
 .bg-pj {
   background-image: url('../img/bg/rename.png');
@@ -116,29 +158,7 @@ html, body {
 .youtube-video:hover {
   transform: scale(1.05); /* Scale up slightly on hover */
 }
-.carousel-control-prev,
-.carousel-control-next {
-  opacity: 0;
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
 
-.carousel:hover .carousel-control-prev,
-.carousel:hover .carousel-control-next {
-  opacity: 1;
-}
-.carousel-item {
-  opacity: 0;
-  transition: opacity 1s ease; /* Smooth fade transition */
-}
-
-.carousel-item.active {
-  opacity: 1;
-}
-.dropdown-menu {
-  display: none;
-  opacity: 0;
-  transition: all 0.3s ease; /* Smooth transition for visibility and opacity */
-}
 
 .dropdown-menu.show {
   display: block;
@@ -162,6 +182,8 @@ html, body {
   font-size: 145px; /* Adjust font size */
   color: #af0000; /* Adjust text color */
   margin-left: 15%;
+  font-family: "Judson", serif;
+
 }
 
 .gallery-images {
@@ -241,6 +263,10 @@ html, body {
   .gallery-double-image, .gallery-triple-image {
     max-width: 50%; /* Adjust width for two images with gap */
   }
+  .homepage-link {
+    margin-right: 20px;
+    margin-left: 0px; /* Adjust the value as needed */
+  }
 }
 
 /* Phones */
@@ -271,6 +297,10 @@ html, body {
     width: 100%;
     height: 100%;
   }
+  .homepage-link {
+    margin-right: 20px;
+    margin-left: 0px; /* Adjust the value as needed */
+  }
 }
 
 /* Adjust navbar padding and brand size for tablets and iPads */
@@ -294,13 +324,17 @@ html, body {
     max-width: 100%; /* Ensure images fit within carousel */
     margin: auto; /* Center the image horizontally */
 }
+.homepage-link {
+  margin-right: 20px;
+  margin-left: 0px; /* Adjust the value as needed */
+}
 
   .carousel-item {
       height: auto; /* Adjust height for tablets */
       margin-top: 12%; /* Adjust margin top for tablets */
   }
   .carousel-buttons img {
-      height: 50px; /* Adjust button height for tablets */
+      height: 70px; /* Adjust button height for tablets */
   }
   .carousel-control-prev,
   .carousel-control-next {
@@ -323,6 +357,10 @@ html, body {
   }
   .youtube-video iframe {
       height: 250px; /* Adjust height for tablets and iPads */
+  }
+  .homepage-link {
+    margin-right: 20px;
+    margin-left: 0px; /* Adjust the value as needed */
   }
 }
 
@@ -367,12 +405,16 @@ html, body {
       margin-top: 50%; /* Adjust font size for mobile */
   }
   .carousel-buttons img {
-      height: 55px; /* Further reduce height for very small screens */
+      height: 65px; /* Further reduce height for very small screens */
   }
   .carousel-buttons img {
-      height: 40px; /* Reduce height for smaller screens */
+      height: 50px; /* Reduce height for smaller screens */
       width: auto; /* Allow width to adjust based on height */
       max-width: 100%; /* Ensure the image doesn't overflow */
+  }
+  .homepage-link {
+    margin-right: 20px;
+    margin-left: 0px; /* Adjust the value as needed */
   }
 }
 
@@ -390,5 +432,9 @@ html, body {
   .youtube-video iframe {
       height: 200px;
       width: 100%; /* Reduced height for mobile */
+  }
+  .homepage-link {
+    margin-right: 20px;
+    margin-left: 0px; /* Adjust the value as needed */
   }
 }
