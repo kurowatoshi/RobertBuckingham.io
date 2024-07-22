@@ -108,6 +108,12 @@ html, body {
 .homepage-link {
   margin-right: 20px; /* Adjust the value as needed */
   margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.homepage-link a {
+  font-size: 17px;
+  font-family: "Cuprum", sans-serif;
 }
 .carousel-item img {
   max-height: 500px; /* Remove max-height to allow natural image size */
