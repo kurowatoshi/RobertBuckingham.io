@@ -55,7 +55,13 @@ html, body {
   font-family: "Cuprum", sans-serif;
 
 }
+.nav-link {
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
 
+.nav-link:hover {
+  color: #af0000; /* Color change on hover */
+}
 .dropdown-menu {
   border: 3px solid #af0000;
   border-radius: 10%;
@@ -165,15 +171,6 @@ html, body {
   opacity: 1;
 }
 
-.nav-link {
-  transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-.nav-link:hover {
-  color: #af0000; /* Color change on hover */
-}
-
-
 .gallery-text {
   margin-bottom: 10px; /* Space below heading */
 }
@@ -253,11 +250,435 @@ html, body {
   margin: 0 auto; /* Center the image horizontally */
   height: auto; /* Maintain aspect ratio */
 }
+.gallery-author {
+  margin-bottom: 20px; /* Space below the single image */
+}
+
+.gallery-author img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  width: 45%; /* Set image width */
+  border: 5px solid yellow; /* Yellow border */
+  display: block; /* Ensure image is centered properly */
+  margin: 0 auto; /* Center the image horizontally */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.blog1 {
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  font-family: "Judson", serif;
+}
+
+
+.stars {
+  font-size: 4.5rem;  
+  color: #FFC700  ;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+
+.blog1 h2 strong {
+  font-weight: bold;
+}
+
+.blog1 p strong {
+  font-weight: bold;
+}
+.blog1 p {
+  font-size: 20px;
+}
+
+
+.author-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px; /* Add padding around the author-info section */
+  font-family: "Judson", serif;
+}
+
+.author-oamoments, .author-vitae {
+  flex: 1;
+  padding-right: 20px; /* Add some space between the two sections */
+}
+
+.author-oamoments {
+  border-right: 2px solid #AF0000;
+}
+
+.author-vitae {
+  max-width: 800px;
+}
+
+.author-oamoments p {
+  font-size: 25px;
+}
+
+.author-vitae p {
+  text-align: justify; /* Ensures paragraphs inside author-vitae are justified */
+}
+
+.publication-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.publication-list li {
+  width: 45%; /* Adjust width as needed */
+  margin-bottom: 50px; /* Add some space between items */
+  font-size: 19px;
+  text-align: justify;
+}
+
+.publications {
+  padding-left: 260px;
+  padding-right: 260px;
+  padding-bottom: 20px;
+}
+
+.publications h2 {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
+  color: #FFC700;
+}
+
+/* Clear margin on the last item to prevent extra space */
+.publication-list li:last-child {
+  margin-right: 0;
+}
+
+
+.national-awards {
+  text-align: center;
+  padding: 40px;
+}
+
+.national-awards p {
+  font-size: 30px;
+}
+
+
+.awards-container{
+  font-family: "Judson", serif;
+}
+
+.publications-divider {
+  border: 1px solid #af0000;
+  width: 88%;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.hospital-activities{
+  padding: 100px;
+  font-family: "Judson", serif;
+}
+
+.hospital-activities-list{
+  padding-left: 180px;
+}
+
+.hospital-activities-list li {
+  padding-top: 20px;
+}
+
+.hospital-activities h2 {
+  color: #FFC700;
+  font-weight: 400;
+  margin-top: -2%;
+  padding-left: 190px;
+}
+.biography{
+  text-align: justify;
+  padding: 70px;
+  font-family: "Judson", serif;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.biography-oamoments {
+  padding-left: 380px;
+  padding-right: 380px;
+}
+.biography-oamoments p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.Contact-shet {
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.Contact-me {
+  margin-top: 100px;
+}
+.Contact-me h1 {
+  font-size: 70px; /* Adjust font size */
+  color: #131212; /* Adjust text color */
+  margin-left: 15%;
+  font-family: "Judson", serif;
+
+}
+
+/*LOOOOOOOOOOOOOOOOOOOOOL */
+
+.contact-form {
+  background-color: #FFC700;
+  padding-bottom: 90px;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  height: 600px;
+  font-family: "Cuprum", sans-serif;
+}
+.wrapper {
+  min-height: 100vh; /* Ensure wrapper takes at least full viewport height */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Ensure horizontal overflow is hidden */
+}
+
+.background-redbar {
+  background-color: #AF0000;
+  width: 500px;
+  position: fixed;
+  top: 0;
+  right: 1%;
+  bottom: 0; /* Adjusted to cover the full height */
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align footer items to the bottom */
+  padding: 20px; /* Optional: Add padding for spacing */
+}
+
+
+.Contact-Me-Lage-Daw {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: "Cambria", serif;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  background-color: transparent;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0d0d0e73;
+}
+
+.form-group-inline {
+  display: flex;
+  gap: 10px; /* Adjust the gap between fields */
+}
+
+.form-group-inline .form-group {
+  flex: 1; /* Each field takes equal space */
+}
+/* Base styles remain the same */
+
+/* For tablets and smaller screens */
+@media (max-width: 992px) {
+  .contact-form {
+    width: 90%; /* Adjust width to take full screen on smaller devices */
+    padding: 20px; /* Reduce padding for better spacing on smaller screens */
+    margin: 0 auto; /* Center the form */
+  }
+  .background-redbar {
+    width: 100%; /* Full width for the red bar */
+    right: 0; /* Adjusted for full width */
+  }
+  .Contact-me h1 {
+    font-size: 45px; /* Adjust font size */
+    color: #131212; /* Adjust text color */
+    margin-left: 5%;
+    font-family: "Judson", serif;
+  
+  }
+}
+
+/* For smartphones */
+@media (max-width: 992px) {
+  .contact-form {
+    padding: 15px; /* Further reduce padding */
+  }
+  .form-group,
+  .form-group-inline .form-group {
+    width: 100%; /* Full width for form inputs */
+  }
+  .form-group label {
+    font-size: 18px; /* Adjust label font size */
+  }
+  .submit-btn {
+    font-size: 20px; /* Adjust button font size */
+  }
+  .background-redbar {
+    background-color: #fdfdfd;
+  }
+}
+
+
+
+
+@media (min-width: 990px){
+  .author-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px; /* Add padding around the author-info section */
+    padding-left: 80px;
+    font-family: "Judson", serif;
+    padding-right: 130px;
+  }
+  
+  .author-oamoments, .author-vitae {
+    flex: 1;
+  }
+  
+  .author-oamoments {
+    border-right: 2px solid #AF0000;
+    padding-left: 80px;
+  }
+
+  .author-oamoments p {
+    text-align: justify;
+  }
+  
+  .author-vitae {
+    text-align: justify;
+    max-width: 800px;
+    padding: 0 50px; /* Add padding inside the author-vitae section */
+  }
+  
+  .author-vitae p {
+    text-align: justify; /* Ensures paragraphs inside author-vitae are justified */
+  }
+  .biography{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+  }
+
+  .biography-oamoments p {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .author-info {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: stretch; /* Stretch items to full width */
+  }
+
+  .author-oamoments, .author-vitae {
+    padding: 0; /* Remove padding when stacked */
+    border: none; /* Remove border when stacked */
+    max-width: none; /* Allow content to expand full width */
+  }
+
+  .author-oamoments {
+    padding-left: 0; /* Adjust padding as needed */
+  }
+
+  .author-vitae {
+    padding: 0; /* Adjust padding as needed */
+  }
+  .author-oamoments p, .author-vitae p {
+    text-align: justify;
+  }
+  .publication-list li {
+    width: 100%; /* Full width on mobile */
+    margin-right: 0; /* No margin on mobile */
+  }
+  .publications {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .hospital-activities{
+    padding: 0px;
+    font-family: "Judson", serif;
+    
+  }
+  .hospital-activities-list{
+    padding-left: 30px;
+  }
+  .hospital-activities h2 {
+    color: #FFC700;
+    font-weight: 400;
+    margin-top: 2%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .biography{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  
+  .biography-oamoments {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .biography-oamoments p {
+    text-align: center;
+  }
+  
+}
 
 /* Tablets and larger phones */
 @media (max-width: 990px) {
   .gallery-text h1 {
     font-size: 28px; /* Adjust font size */
+  }
+  .publication-list li {
+    width: 100%; /* Full width on mobile */
+    margin-right: 0; /* No margin on mobile */
   }
 
   .gallery-double-image, .gallery-triple-image {
@@ -266,6 +687,44 @@ html, body {
   .homepage-link {
     margin-right: 20px;
     margin-left: 0px; /* Adjust the value as needed */
+  }
+  .publication-list li {
+    width: 100%; /* Full width on mobile */
+    margin-right: 0; /* No margin on mobile */
+  }
+  .publications {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .biography{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  
+  .biography-oamoments {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .biography-oamoments p {
+    text-align: center;
+  }
+  .hospital-activities{
+    padding: 0px;
+    font-family: "Judson", serif;
+    
+  }
+  .hospital-activities-list{
+    padding-left: 30px;
+  }
+  .hospital-activities h2 {
+    color: #FFC700;
+    font-weight: 400;
+    margin-top: 2%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -297,9 +756,38 @@ html, body {
     width: 100%;
     height: 100%;
   }
+  .gallery-author img {
+    width: 100%;
+  }
+  .gallery-author img {
+    width: 100%;
+    height: 100%;
+  }
   .homepage-link {
     margin-right: 20px;
     margin-left: 0px; /* Adjust the value as needed */
+  }
+  .publication-list li {
+    width: 100%; /* Full width on mobile */
+    margin-right: 0; /* No margin on mobile */
+  }
+  .publications {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .biography{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  
+  .biography-oamoments {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .biography-oamoments p {
+    text-align: center;
   }
 }
 
@@ -343,6 +831,19 @@ html, body {
       font-size: 16px; /* Adjust font size for tablets */
       margin-top: 40%; /* Adjust margin top for tablets */
   }
+  .biography{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  
+  .biography-oamoments {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .biography-oamoments p {
+    text-align: center;
+  }
 }
 
 /* Make dropdown menu responsive for tablets and iPads */
@@ -361,6 +862,19 @@ html, body {
   .homepage-link {
     margin-right: 20px;
     margin-left: 0px; /* Adjust the value as needed */
+  }
+  .biography{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  
+  .biography-oamoments {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .biography-oamoments p {
+    text-align: center;
   }
 }
 
@@ -415,6 +929,19 @@ html, body {
   .homepage-link {
     margin-right: 20px;
     margin-left: 0px; /* Adjust the value as needed */
+  }
+  .biography{
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  
+  .biography-oamoments {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .biography-oamoments p {
+    text-align: center;
   }
 }
 
