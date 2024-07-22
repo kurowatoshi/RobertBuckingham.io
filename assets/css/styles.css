@@ -122,7 +122,7 @@ html, body {
 
 
 .carousel-buttons {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -530,7 +530,7 @@ html, body {
 }
 
 .submit-btn:hover {
-  background-color: #0d0d0e73;
+  background-color: #AF0000;
 }
 
 .form-group-inline {
@@ -561,6 +561,7 @@ html, body {
     font-family: "Judson", serif;
   
   }
+
 }
 
 /* For smartphones */
@@ -581,6 +582,7 @@ html, body {
   .background-redbar {
     background-color: #fdfdfd;
   }
+
 }
 
 
@@ -628,12 +630,17 @@ html, body {
     text-align: center;
   }
 
+
 }
 
 @media (max-width: 768px) {
   .author-info {
     flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: stretch; /* Stretch items to full width */
+  }
+  .footer1 {
+    margin-left: auto; /* Reset margin to center */
+    width: 100%; /* Full width on smaller screens */
   }
 
   .author-oamoments, .author-vitae {
@@ -811,6 +818,11 @@ html, body {
   .biography-oamoments p {
     text-align: center;
   }
+  .footer1 {
+    margin-left: auto; /* Reset margin to center */
+    width: 100%; /* Full width on smaller screens */
+  }
+
 }
 
 /* Adjust navbar padding and brand size for tablets and iPads */
@@ -837,6 +849,10 @@ html, body {
 .homepage-link {
   margin-right: 20px;
   margin-left: 0px; /* Adjust the value as needed */
+}
+.footer1 {
+  margin-left: auto; /* Reset margin to center */
+  width: 100%; /* Full width on smaller screens */
 }
 
   .carousel-item {
