@@ -11,7 +11,7 @@ html, body {
 }
 
 .footer {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .footer-icons {
@@ -29,6 +29,28 @@ html, body {
   opacity: 1;
 }
 
+
+/* FOOTER SA CONTACT PISTE YAWWA */
+.footer1 {
+  padding: 20px 0;
+  margin-left: 72.6%;
+  width: 502px;
+}
+
+.footer1-icons {
+  margin-top: 10px;
+}
+
+.footer1-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer1-icons a:hover {
+  opacity: 1;
+}
  /* Optional custom styles */
  .navbar {
   padding-left: 10%;
