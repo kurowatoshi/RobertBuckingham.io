@@ -682,6 +682,9 @@ html, body {
   .author-oamoments p, .author-vitae p {
     text-align: justify;
   }
+  .author-vitae h3 {
+    color: #FFC700;
+  }
   .publication-list li {
     width: 100%; /* Full width on mobile */
     margin-right: 0; /* No margin on mobile */
