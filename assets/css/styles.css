@@ -631,6 +631,9 @@ html, body {
   .author-vitae p {
     text-align: justify; /* Ensures paragraphs inside author-vitae are justified */
   }
+  .author-vitae h3 {
+    color: #FFC700;
+  }
   .biography{
     text-align: center;
     padding: 10px;
