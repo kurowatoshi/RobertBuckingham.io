@@ -72,7 +72,7 @@ html, body {
 }
 
 .navbar-nav .nav-link {
-  color: #af0000 !important;
+  color: red !important;
   font-size: 17px;
   font-family: "Cuprum", sans-serif;
 
@@ -84,6 +84,7 @@ html, body {
 .nav-link:hover {
   color: #af0000; /* Color change on hover */
 }
+
 .dropdown-menu {
   border: 3px solid #af0000;
   border-radius: 10%;
