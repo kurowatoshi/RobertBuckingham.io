@@ -345,9 +345,12 @@ html, body {
 }
 
 .author-oamoments p {
-  font-size: 25px;
+  font-size: 23px;
 }
 
+.author-vitae h3 {
+  font-size: 23px;
+}
 .author-vitae p {
   text-align: justify; /* Ensures paragraphs inside author-vitae are justified */
 }
@@ -634,6 +637,7 @@ html, body {
   }
   .author-vitae h3 {
     color: #FFC700;
+    
   }
   .biography{
     text-align: center;
