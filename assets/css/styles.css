@@ -93,7 +93,7 @@ html, body {
 }
 
 .dropdown-item {
-  color: #af0000; /* Set dropdown item font color */
+  color: red !important; /* Set dropdown item font color */
   font-size: 17px;
   font-family: "Cuprum", sans-serif;
 }
