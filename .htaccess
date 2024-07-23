@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^home$ /index.html [L]
+RewriteRule ^about$ /about.html [L]
+RewriteRule ^contact$ /contact.html [L]
+RewriteRule ^blog$ /blog.html [L]
+RewriteRule ^gallery$ /gallery.html [L]
